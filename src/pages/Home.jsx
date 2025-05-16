@@ -127,7 +127,7 @@ function Home() {
         aria-busy={loading}
       >
         <h1 className="text-3xl font-extrabold text-gray-800 mb-6">
-          All Countries
+          Every Country
         </h1>
         {loading && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -156,7 +156,7 @@ function Home() {
                   className="bg-blue-300 text-black px-6 py-2 rounded-md font-medium hover:bg-green-300 transition-colors focus:outline-none focus:ring-2 focus:ring-black"
                   aria-label="Show all countries"
                 >
-                  Show All Countries
+                  Show every country
                 </button>
               </div>
             )}
