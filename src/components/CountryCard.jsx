@@ -17,7 +17,7 @@ function CountryCard({ country }) {
 
   const toggleFavorite = () => {
     if (!user) {
-      alert("Please log in to add favorites");
+      alert("Please log in to add favourites");
       return;
     }
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");

@@ -117,7 +117,7 @@ function Header({ onSearch, onFilter }) {
 
   // Menu items configuration
   const menuItems = [
-    { path: "/favorites", label: "Favorites" },
+    { path: "/favorites", label: "Favourites" },
     ...(user
       ? [
           {

@@ -30,7 +30,7 @@ function Favorites() {
         );
         setFavorites(favoriteCountries);
         setLoading(false);
-      } catch (err) {
+      } catch {
         setError("Failed to load favorites");
         setLoading(false);
       }
