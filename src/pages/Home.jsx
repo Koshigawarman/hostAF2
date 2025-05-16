@@ -127,7 +127,7 @@ function Home() {
         aria-busy={loading}
       >
         <h1 className="text-3xl font-extrabold text-gray-800 mb-6">
-          Every Country
+          Every country
         </h1>
         {loading && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
