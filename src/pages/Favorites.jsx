@@ -16,7 +16,7 @@ function Favorites() {
     const fetchFavorites = async () => {
       if (authLoading) return; // Wait for auth to complete
       if (!user) {
-        setError("Please log in to view favorites");
+        setError("Please log in to view favourites");
         setLoading(false);
         return;
       }
@@ -31,7 +31,7 @@ function Favorites() {
         setFavorites(favoriteCountries);
         setLoading(false);
       } catch {
-        setError("Failed to load favorites");
+        setError("Failed to load favourites");
         setLoading(false);
       }
     };
@@ -51,7 +51,7 @@ function Favorites() {
       <Header onSearch={handleSearch} onFilter={handleFilter} />
       <main className="container max-w-6xl mx-auto flex-grow px-4">
         <h1 className="text-3xl font-extrabold text-gray-800 mb-6">
-          Favorites
+          Favourites
         </h1>
         {loading && (
           // Display skeleton cards in the same grid layout
@@ -64,12 +64,12 @@ function Favorites() {
         {error && <p className="text-center text-red-500 py-8">{error}</p>}
         {!user && !loading && (
           <p className="text-center text-gray-600 py-8">
-            Please log in to view your favorite countries.
+            Please log in to view your favourite countries.
           </p>
         )}
         {user && !loading && !error && favorites.length === 0 && (
           <p className="text-center text-gray-600 py-8">
-            No favorite countries added yet.
+            No favourite countries added yet.
           </p>
         )}
         {user && !loading && !error && favorites.length > 0 && (
